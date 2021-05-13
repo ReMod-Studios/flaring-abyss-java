@@ -4,13 +4,12 @@ loaderVersion="[1.12,)"
 license = "Apache-2.0"
 
 [[mods]]
-modId = "archskeleton"
+modId = "flabyss"
 version = "${version}"
-displayName = "Architectury Skeleton"
+displayName = "Flaring Abyss"
 authors = "ReMod Studios"
 description = '''
-If you're seeing this, then someone in our team messed up and forgot
-to replace this text. Actually, I'm surprised that this boots up at all - leocth
+A Project which aims to expand the Nether further!
 '''
 #logoFile = ""
 
