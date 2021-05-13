@@ -1,47 +1,35 @@
-# Architectury Skeleton
-The absolute bare-bones (badum psh) skeleton for ReMod Studios' Java Edition mods, based on Architectury.
-### Steps to make a new mod out of this template
-1. Clone with the Git tool of choice (command-line, IDEA built-in, etc.)
-2. Replace *all* occurences of `architectury-skeleton`, `ArchitecturySkeleton` and `archskeleton` in the project. Detailed list as follows:
-    * in the last line of `settings.gradle` (`rootProject.name = "architectury-skeleton"`)
-    * the `archives_base_name` property in `gradle.properties`
-    * the package names for all three modules (`com.remodstudios.archskeleton.(fabric|forge)?`)
-    * the main class in `common` (`ArchitecturySkeleton`), along with its `MOD_ID` field (`archskeleton`)
-    * the client class in `common` (`ArchitecturySkeletonClient`)
-    * the modloader specific entrypoints (`ArchitecturySkeleton(Fabric|Forge)(Client)?`)
-    * entrypoints in `fabric.mod.json`
-        ```json5
-        {
-          // ...
-          "entrypoints": {
-            "main": [{
-              "adapter": "kotlin",
-              "value": "com.remodstudios.archskeleton.fabric.ArchitecturySkeletonFabric"
-            }],
-            "client": [{
-              "adapter": "kotlin",
-              "value": "com.remodstudios.archskeleton.fabric.ArchitecturySkeletonFabricClient"
-            }]
-          },
-          // ...
-        }
-        ```
-      * in both `<root>/forge/src/main/resources/META-INF/mods.toml` and `<root>/fabric/src/main/resources/fabric.mod.json`
-        ```toml
-        [[mods]]
-        modId = "archskeleton"
-        ```
-        ```json5
-        {
-          "schemaVersion": 1,
-          "id": "archskeleton"
-          // ...
-        }
-        ```
-3. Update mod description and dependencies in both `<root>/forge/src/main/resources/META-INF/mods.toml` and `<root>/fabric/src/main/resources/fabric.mod.json`.
+# Flaring Abyss
+Flaring Abyss is a Minecraft Mod/Addon Project which aims to expand the Nether beyond the Nether Update (1.16) by adding various new additions, tweaking current vanilla, and much more. 
 
-## In case if the mod is broken, but you can't quite figure it out
-Around 90% of the issues I asked in Architectury's Discord server are related to, if not directly caused by, incorrectly generated run configs.
-So before asking, please refresh your run configs by:
-   * IDEA: deleting all run configs and re-sync Gradle.
-   * Other IDEs: TODO
+## **Supported Platforms:**
+- Fabric (Java Edition Modloader)
+- Add-on System (Bedrock Edition's in-built system)
+
+## **Vanilla Changes and Additions:**
+**Entities:**
+- Wither Skeletons drop Withered Bones
+- Wither Skeletons use Stygian Swords
+- Wither Skeletons have melee and ranged variants
+
+**Biomes:**
+- Soulsand Valley have soul puddles
+- Soul Diamond Ore
+- Basalt Iron Ore
+
+## **FAQ (Frequently Asked Questions):**
+Q. Whats the point when we already have 1.16?\
+A. 1.16 tho a good update, feels very small and incomplete to an extent. This mod aims to fix that.
+
+------
+
+Q. Will you do a Forge Port?\
+A. You're already on the page.\
+![Stabby will find you.](https://media.discordapp.net/attachments/814459577516294165/823562516587872306/799276530152374282.png?width=96&height=96)
+
+------
+
+Q. Will you port to older versions (1.12.2, 1.15.2 etc.)?\
+A. No.\
+![Stabby will find you.](https://media.discordapp.net/attachments/814459577516294165/823562516587872306/799276530152374282.png?width=96&height=96)
+
+------
